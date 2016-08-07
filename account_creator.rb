@@ -86,7 +86,7 @@ def create_account(thread_index, password, prefix)
 		email = (0...12).map { o[rand(o.length)] }.join
 	end
 	password ||= (0...12).map { o[rand(o.length)] }.join
-	email = "#{email.downcase}@divismail.ru"
+	email = "#{email.downcase}@lackmail.ru"
 	md5_email = Digest::MD5.hexdigest(email)
 
 	final_signup_parameters = {
